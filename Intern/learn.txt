@@ -1,0 +1,4 @@
+seu or xeu or stu or xtu
+ul is what gives can give the dotted listing stuff
+to download you use downlaod word after something like this
+<a href="pix.jpg" download ="hehe image">Download Image</a>
