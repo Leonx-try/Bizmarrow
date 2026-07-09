@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<!-- Block elements 
+ The block element is like a box which could contain two or many lines -->
+ <div>
+    <p> Hey im pretty smart </p>
+    <button onclick="">Click me please</button>
+ </div>
 
+ <!-- inline elements 
+  They are basically element that are in like one line  -->
+  <p> Messi is the Goat </p>
+
+  <!-- Input and their types 
+    The input element fields where users can enter data like text, passwords, emails, dates etc 
+    the examples should be very explanatory. Input has types for email, submittion, 
+    date checkbox, radio etc -->
+    <input type="text" placeholder="Enter your name">
+    <input type="radio" name="gender" value ="male">
+    <input type="email" placeholder="Enter your email">
+    <input type="date" placeholder="Enter your date of birth">  
