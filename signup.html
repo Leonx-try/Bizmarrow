@@ -1,0 +1,55 @@
+<!-- Assignment 
+ create a sign up form 
+ 1. First name 
+ 2. Lastname 
+ 3. Email
+ 4.Address
+ 5.Date of birth
+ 6. gender
+ 7.Select course
+ 8. Mobile number
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <form method="post">
+        <label><h1><b>Sign up</b></h1></label>
+        <input type="text" placeholder="Enter Firstname">
+
+        <input type="text" placeholder="Enter lastname">
+
+        <input type="email" placeholder="Enter Email">
+
+        <input type="text" placeholder="Type in your address">
+        
+        <label for=""> Date of birth</label>
+        <input type="date" name="dob">
+
+        <input type="radio" name="Gender" value="Male">
+        Male
+        <input type="radio" name="Gender" value="Female">
+        Female
+        
+        <input type="text" maxlength="10" value="+234">
+
+        <select>
+            <option value="select course" disabled selected>Select course</option>
+            <option value="Maths">Maths</option>
+            <option value="Cos101">Cos101</option>
+            <option value="Physics">Physics</option>
+            <option value="English">English</option>
+            <option value="Chemistry">Chemistry</option>
+        </select>
+        
+        <button type="submit">Submit</button>
+        
+    </form>
+    </div>
+</body>
+</html>

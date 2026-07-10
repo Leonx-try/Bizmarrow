@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS internal  */
+         /*  Selector : to access elements */
+      /*tag name: affect any element with a particular called tagname  */
+      /* a tag can have two class names  */
+      /* since they can have same class names then the latest can override the other existing ones  */
+      /* But all these cant happen with id */
+      /* opacity is from 0-1 1 is not transparent */
+      div{
+            color: red;
+        }
+        .demo{
+            background: #ffe100;
+        }
+        .demo1{
+            background: #00ff00;
+            color: #008cff;
+        }
+        .demo2:hover{
+            color: #000000;
+            transition: 0.8s;
+        }
+        #demo{
+            background: #008cff76;
+            color: #ffffff;
+            padding: 50px;
+            background: transparent;
+            background: linear-gradient(#000000,rgb(255, 0, 0));
+            backgorund: conic-gradient(red, black);
+            background: radial-gradient(red, black);
+            background-image: url(180486570-obito-uchiha-8k-wallpaper-hd-anime-wallpaper-4k-wallpaper-image-background-photos-and-picture.jpg);  
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* top,left,bottom,center */
+            background-position: top;
+        }
+        section{
+            background: #008cff;
+        }
+        section span{
+            background: #ff0066;
+            color: #ffffff;
+        }
+        .demo, #demo,.contain span{
+            font-size: 28px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="class-4.css">
+</head>
+<body>
+    <!-- CSS inline
+     two elements can have the same class name  -->
+     <p style="color:#0000ff">Lorem, ipsum dolor </p>
+
+     <div>Lorem, ipsum dolor</div>
+     <div>Lorem, ipsum dolor</div>
+
+     <section class="demo">Lorem, ipsum dolor</section>
+     <section class="demo">Lorem, ipsum dolor</section>
+     <section class="demo1 demo2">Lorem, ipsum dolor</section>
+
+    <p id="demo">Lorem, ipsum dolor sit</p>
+    <p id="demo">Lorem, ipsum dolor sit</p>
+<!-- here your actually designing the section not the span 
+ if your want to design the span then you call it differently -->
+ 
+    <section class="contain">
+        <span>Lorem, ipsum dolor</span>
+        <span>Lorem, ipsum dolor</span>
+    </section>
+    <span>Lorem, ipsum dolor</span>
+</body>
+</html>
