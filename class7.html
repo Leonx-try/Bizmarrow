@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* assignment
+        1. redesign the yesterdays assignment from github
+        2. design a table  */
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* an element should not be above its defined width or height 
+            normally if you add padding it addes to the already defined
+            widtgh and height  */
+            box-sizing: border-box;
+        }
+        /* by default it is flex- start that the contents
+        begins fir the main begining */
+        .container1{
+            /* flex is like in a grid form
+            flex must be used in only a block element like 
+            section, div etc  */
+            display: flex;
+            /* you can set the flex to dispaly in list
+            form using  */
+            flex-direction: column;
+            /* the flex-direction in default is in a row  */
+            justify-content: flex-end;
+            /* this changes the dolor to go behind and if its column reverse it does the same thing  */
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            justify-content:space-around;
+            justify-content: space-between;
+            justify-content:center;
+        }
+        .container1 div{
+            padding: 30px;
+            background: orange;
+            margin: 2px;
+        }
+        /* usingb display inline converts a block element arrangment to an
+        inline element */
+        .d-block{
+            display: block;
+            padding: 8px;
+            background: red;
+        }
+
+    /* inline element does not have a width
+    inline-block has width */
+        .d-none{
+            background: #1d7e9c;
+            display: inline;
+            display: inline-block;
+            display: none;
+        }
+        .intro{
+            height: 100vh; 
+            background-image: url(img.png);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+        .intro .content{
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 100px 10px;
+            border-radius: 7px;
+            width: 90%;
+            max-width: 450px;
+            /* max-width says even if it increase in any device its being viewd in
+            when it reaches 450px its should stop increasing  */
+            border: 2px solid white;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            text-shadow: 0 0 2px #00000045;
+            font-weight: 900;
+            margin: auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .intro a{
+            font-size: 14px;
+            background: white;
+            padding: 10px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: .3s;
+            /* fit content contains only things that the an elements contains */
+            width: fit-content;
+            display: block;
+            margin:auto;
+            &:hover{
+                box-shadow: 5px 5px 7px 0px #ffffff45;
+                transform: translate(0, -3px);
+            }
+        }
+        header{
+            display: flex;
+            padding: 20px;
+            background-image: url(img.png);
+            background-position: top;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav a{
+            display: block;
+            padding: 4px 8px;
+            text-decoration: none;
+            border-radius: 6px;
+            &:hover{
+                background: #ffffff89;
+                color: white;
+                font-weight: bold;
+            }
+        }
+        nav{
+            display: flex;
+        }
+        nav .btn{
+            background: #ffffff;
+            padding: 6px 20px;
+            box-shadow: 0 0 4px 1px #00000077;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Matrix <span>BOOTCAMPS</span></h1>
+        <nav>
+            <a href="">Bootcamp</a>
+            <a href="">Forums</a>
+            <a href="" class="btn"> Join now</a>
+        </nav>
+    </header>
+    <div class="intro">
+        <div class="content">
+            <h2>2026 Web BootCamp</h2>
+            <a href=""> Join now</a>
+        </div>
+    </div>
+    <!-- display -->
+    <section class="container1">
+        <div> dolor sit</div>
+        <div>Lorem, ipsum.</div>
+        <div>Lorem ipsum dolor sit.</div>
+    </section>
+
+    <span class="d-block">Lorem, ipsum.</span>
+    <span class="d-block">Lorem, ipsum.</span>
+
+    <div class="d-none"> Lorem ipsum dolor sit</div>
+</body>
+</html>

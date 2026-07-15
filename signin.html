@@ -4,29 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font-family:'Courier New', Courier, monospace;
+            background: #ffffffe3;
+        }
+        .itform{
+            background-image:url("main.png");
+            border-radius: 8px;
+            width:350px;
+            height: 250px;
+            color: aliceblue;
+            margin-top: 190px;
+            margin-left: 455px;
+            display: block;
+            padding: 30px;
+        }
+        .itform form{
+            padding: 15px;
+        }
+        .mail input{
+            display: block;
+            margin: 6px;
+            width: 310px;
+        }
+        
+        .pass input{
+            display: block;
+            margin: 6px;
+            width: 310px;
+        }
+        .word{
+            background: #111D38;
+            display: flex;
+        }
+        .word input{
+            border: 0;
+            outline:0;
+            width: 100%;
+        }
+        .word button{
+            background:transparent;
+            border: 0;
+        }
+        .line{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .line hr{
+            flex:1;
+        }
+        .forgot a{
+            text-decoration: none;
+            color: rgba(111, 217, 255, 0.811);
+            margin-left: 32%;
+        }
+        p a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        p a {
+            color: rgba(111, 217, 255, 0.811);
+            margin-left: 20px;
+        }
+        p{
+            margin-left:20px;
+            margin-top:10px
+        }
+        .sub{
+            display: flex;
+            margin-left:38%;
+            background: #0058b0;
+            padding: 8px 18px ;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+    </style>
 </head>
-  <link rel="stylesheet" href="style.css">
 <body>
-    <div class="itform">
+    <form action="">
+        <div class="itform">
     <!-- the method post secures the info in the form and less secure is the default one get -->
-     <form action="" method="POST">
-
-        <div class="mail">
-        <label for=""> Enter Your Email</label>
-        <input type="email" required name="email">
+            <div class="mail">
+                <label for=""> Email Address </label>
+                <input type="email" required name="email">
+            </div>
+            <div class="pass">
+                <label for=""> Password</label>
+                <form class="word">
+                <input type="password" required name="password" maxlength="8">
+                <button type="button">Send</button>
+                </form>
+            </div>
+            <input type="checkbox">
+            Remember Me 
+            <button class="sub" type="submit">Submit</button>   
+            <div class="forgot">
+                <a href="forgot-password.html"> Forgot password</a>
+            </div>
+            <div class="line">
+            <hr>
+            <span>or</span>
+            <hr>
+            </div>
+            <p> Dont have an account?<a href="signup.html">Sign up...</a></p>
         </div>
-
-        <div class="pass">
-        <label for=""> password</label>
-        <input type="password" required name="password" maxlength="8">
-        </div>
-
-        <button type="submit">Submit</button>
-        <div class="forgot">
-        <a href="forgot-password.html"> Forgot password</a>
-        </div>
-        <p> Dont have an account?<a href="signup.html">Sign up...</a></p>
     </form>
-    </div>
 </body>
 </html>
