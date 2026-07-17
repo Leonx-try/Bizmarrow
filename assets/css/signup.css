@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    overflow: auto;
+    height: 100vh;
+
+}
+input, textarea, select, button{
+    padding: 15px;
+    background: transparent;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 6px 0 #80808034;
+    border-radius: 8px;
+    outline: 0;
+    font-weight: bold;
+    color: #808080;
+    margin-bottom: 20px;
+}
+form button{
+    background: #009;
+    color: #fff;
+}
+.panel{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section{
+    display: flex;
+    gap: 20px;
+    /* meaning that mininum height is 100vh and above */
+    height: 100vh;
+}
+label{
+    color: #808080;
+    font-weight:600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+}
+.left-panel{
+    background: #009;
+    color: #fff;
+    text-align: center;
+}
+.left-panel .icon{
+    font-size: 50px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 150px;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+.left-panel h1{
+    font-size: 60px;
+}
+.left-panel .title p{
+    font-size: 27px;
+    font-weight: 100;
+}
+.left-panel ul{
+    text-align: left;
+    font-weight: 200px;
+    font-size: 16px;
+    /* space between each li */
+    line-height: 30px;
+    list-style-type: none;
+    margin: 25px 0;
+    letter-spacing: 2px;
+}
+.left-panel .desc span{
+    background: #2c2cdf71;
+    padding: 10px 40px;
+    display: block;
+    width: fit-content;
+    border-radius:30px;
+    animation: blow 2s linear infinite;
+}
+@keyframes blow{
+    0%, 100% {scale: 1.001; box-shadow: 0 0 8px 0 #ffffff7b;}
+    50%{ scale:1; box-shadow: 0 0 0 0 #ffffff7b;}
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .def{
+            background: orangered;
+            color: #fff;
+            padding: 30px;
+            margin: 10px 0;
+            /* position is static in default  */
+            position: static;
+        }
+        .absolute{
+            /* top left right only works with postion */
+            background: blue;
+            position: absolute;
+            /* absolute  moves it form the position of the second place and can be move top etc */
+            /* top: 30px; */
+            bottom: 30px;
+            right: 30px;
+            /* left: 30px; */
+        }
+        .fixed{
+            /* the fixed element is literally fixed */
+            background: #000;
+            position: fixed;
+            z-index: 600;
+        }
+        .relative{
+            /* the top here is from the nearest element while the top in absolute is 
+            from the vh */
+            position: relative;
+            background:yellow;
+            top: 30px;
+        }
+        .sticky{
+            position:sticky;
+            background: #00ff37;
+            top:20px;
+        }
+        /* transition */
+        .btn{
+            background:#ff0000;
+            padding: 10px 30px;
+            border: 0;
+            border-radius: 10px;
+            transition:.3s;
+            /* width:40%; */
+            &:hover{
+                background:#000;
+                /* width:100%; */
+                transform:scale(1.05);
+            }
+        }
+        .card{
+            width:200px;
+            border-radius: 10px;
+            box-shadow: 0 0 12px 5px #00000045;
+            overflow:hidden;
+        }
+        .card img{
+            display:block;
+            margin:auto;
+            transition:.5s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .box{
+            width:100px;
+            height: 100px;
+            background: #000;
+            border-radius: 8px;  
+            transform: rotate(45deg);  
+            transform: rotateX(180deg);  
+            transform: rotateY(180deg);  
+            color: aliceblue;
+            translate: 30px -50px;
+            /* this runs 1 or put the number of times you want it to run or put infinte */
+            animation: animation1 5s 50 infinite;
+        }.circle{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 5px solid #009;
+            border-top-color: #00009945;
+            animation: spinner 1s infinite linear;
+        }
+        @keyframes spinner{
+            0%{transform: rotate(0deg)}
+            100%{transform: rotate(360deg)}
+        }
+               
+        /* just name the keyframe whatever thou pleases i named it animatiion 1 */
+        @keyframes animation1{
+            0%{background: red;}
+            50%{background: #000;}
+            100%{background:#099;}
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <marquee behaviour="" direction="">
+        <section style="display: flex; gap: 10px;">
+            <div>item1</div>
+            <div>item1</div>
+            <div>item1</div>
+        </section>
+    </marquee>
+    <div class="box">Box</div>
+    <button class="btn">hehe</button>
+    <div class="card">
+        <img src="shap.png" alt="">
+    </div>
+    <!-- position -->
+     <div class="def">Lorem ipsum dolor sit amet.</div>
+     <!-- NOTE the naming here???..............>/.l;,;.,'.' -->
+     <div class="def absolute">Lorem ipsum dolor sit amet.</div>
+     <div class="def fixed">Lorem ipsum dolor sit amet.</div>
+     <div class="def relative">Lorem ipsum dolor sit amet.</div>
+     <div class="def sticky">Lorem ipsum dolor sit amet.</div>
+     <div class="def">Lorem ipsum dolor sit amet.</div>
+     <div class="def">Lorem ipsum dolor sit amet.</div>
+     <div class="def">Lorem ipsum dolor sit amet.</div>
+     <div class="def">Lorem ipsum dolor sit amet.</div>
+     <div class="def">Lorem ipsum dolor sit amet.</div>
+     <div class="def">Lorem ipsum dolor sit amet.</div>
+     <div class="def">Lorem ipsum dolor sit amet.</div>
+     
+</body>
+</html>
