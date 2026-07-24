@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-59mflmEHdfG3+iNat6Jg0HZPgYcAhZ7q0VO+q50sfkQDMBpoaSJfjJU2HuH5aBeMZyTwfKB54G8hratLP3Jsow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 40px auto;
+    padding: 40px 20px;
+    box-shadow: 0 0 15px 0 #80808064;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 12px;
+
+}
+input, button{
+    padding: 15px;
+    background: transparent;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 6px 0 #80808034;
+    border-radius: 8px;
+    outline: 0;
+    font-weight: bold;
+    color: #808080;
+    margin: 10px auto;
+    width: 100%;
+    /* display: block; */
+}
+form button{
+    background: #009;
+    color: #fff;
+
+}
+.panel{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section{
+    display: flex;
+    gap: 20px;
+    height: 100vh;
+}
+
+.left-panel{
+    background: #009;
+    color: #fff;
+    text-align: center;
+}
+.left-panel .icon{
+    font-size: 50px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 150px;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+.left-panel h1{
+    font-size: 60px;
+}
+.left-panel .title p{
+    font-size: 27px;
+    font-weight: 100;
+}
+
+.left-panel .desc span{
+    background: #2c2cdf71;
+    padding: 10px 40px;
+    display: block;
+    width: fit-content;
+    border-radius:30px;
+    animation: blow 2s linear infinite;
+}
+@keyframes blow{
+    0%, 100% {scale: 1.001; box-shadow: 0 0 8px 0 #ffffff7b;}
+    50%{ scale:1; box-shadow: 0 0 0 0 #ffffff7b;}
+}
+
+
+form .check{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    margin: 15px 0;
+}
+input[type='checkbox']{
+    display: inline;
+    box-shadow: none;
+    margin: 0;
+    width: auto;
+}
+.sign a{
+    display: flex;
+    background: #009;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    width: 250px;
+    animation: mines 1s infinite;
+}
+@keyframes mines {
+    1%{box-shadow: 4 4 7px 5px #a5a5a5;}
+    50%{box-shadow: 0 0 4px 1px #4f4f4f;}
+    100%{box-shadow:0 0 0 0 white;}
+}
+.sign a span{
+     margin-left: 87px;
+}
+a{
+    text-decoration: none;
+    color: #808080;
+}
+ 
+    </style>
+</head>
+<body>
+    <section>
+        <div class="left-panel panel">
+            <div class="title">
+                <div class="icon"><span> <i class="ri-building-fill"></i></span> </div>
+                <h1>UPMONEY</h1>
+                <p>Micro Fiance Bank</p>
+            </div>
+            <div class="desc">
+                <p>Sign in to continue to your account</p>
+                <p style="margin: 20px auto;"><span><i class="ri-verified-badge-line"></i>Trused by Millions</span></p>
+            </div>
+        </div>
+        <div class="panel">
+
+            <form action="" class="log">
+                                <h3>Welcome Back</h3>
+
+                <input type="text" placeholder="someone@mail.com" id="mail">
+
+                <input type="text" placeholder=".........." id="password" maxlength="8">
+            
+                <div class="check">
+                    <input type ="checkbox">
+                    <span>Remember me</span>
+                </div>
+                <div class="sign">
+                 <button type="submit" href=""> Sign in  </button>
+                </div>
+
+                <div class="count">
+                    <p>Don't have an account?</p>
+                    <a href="mainsignup.html">Create Account</a>
+                </div>
+
+            </form>
+        </div>
+    </section>
+</body>
+</html>

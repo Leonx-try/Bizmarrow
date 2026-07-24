@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*if your using the @media you only change whta 
+        needs to be changed the rest of the design that have 
+        been made on a particular element still stands  */
+        .demo{
+            background: orange;
+            padding: 30px;
+            /* 768 is the sixe of the smallest tab and it is recommended 
+            so anything below is regarded as phone and above is a lappi*/
+            @media screen and (min-width:768x) {
+                background: blue;
+                /* padding: 50px; */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- flex wrap help in responsive design  like if the screen gets 
+     smaller it should be able to shift some things in alignment -->
+     <div class="demo"></div>
+     <div class="demo"></div>
+        <style>
+            .demo{
+                /* default is usually mobile */
+                background: red; 
+                padding: 30px;
+                /* tablet then set min and max width so that the max doesnt reach lappis width */
+                @media screen and (min-width: 768px) and (max-width: 1000px){
+                    background: blue;
+                }
+                @media screen and (min-width: 1001px) {
+                    background: yellow;
+                }
+            }
+        </style>
+</body>
+</html>

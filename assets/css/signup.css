@@ -95,3 +95,44 @@ label{
     0%, 100% {scale: 1.001; box-shadow: 0 0 8px 0 #ffffff7b;}
     50%{ scale:1; box-shadow: 0 0 0 0 #ffffff7b;}
 }
+.log{
+    justify-content: center;
+    align-items: center;
+}
+.log input{
+    padding:20px;
+    width:70%;
+}
+.log .check{
+    display: flex;
+    gap: 15px;
+    padding: 2px;
+    width: 50px;
+    margin-left: -360px;
+}
+.sign a{
+    display: flex;
+    background: #009;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    width: 250px;
+    animation: mines 1s infinite;
+}
+@keyframes mines {
+    1%{box-shadow: 4 4 7px 5px #a5a5a5;}
+    50%{box-shadow: 0 0 4px 1px #4f4f4f;}
+    100%{box-shadow:0 0 0 0 white;}
+}
+.sign a span{
+     margin-left: 87px;
+}
+a{
+    text-decoration: none;
+    color: #808080;
+}
+.count{
+    margin-top: 12px ;
+    text-align: center;
+}
