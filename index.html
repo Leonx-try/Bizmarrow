@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glorial Trends</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    integrity="sha512-59mflmEHdfG3+iNat6Jg0HZPgYcAhZ7q0VO+q50sfkQDMBpoaSJfjJU2HuH5aBeMZyTwfKB54G8hratLP3Jsow=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      color: white;
+    }
+
+    .hero {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: fixed;
+      z-index: -1;
+      opacity: 0.4;
+    }
+
+    .sub {
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: white;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      margin: 5px auto;
+      max-width: 500px;
+      text-decoration: none;
+      color: #000;
+      font-size: large;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .herosection {
+      text-align: center;
+      padding-top: 120px;
+    }
+
+    .herosection h2 {
+      margin-top: 160px;
+      animation: menz 3s linear;
+    }
+
+    .herosection h1 {
+      margin-top: -50px;
+      transition: 0.3s;
+      animation: herz 0.8s linear;
+    }
+ 
+    .products-container {
+      background: linear-gradient(#ffffff00, #ffffff30, #fff, #fff,#fff,#fff);
+      padding: 60px 0;
+    }
+
+    .products-container h2 {
+      text-align: center;
+      color: #000;
+      padding: 20px 0;
+    }
+
+    .quic {
+      margin-top: 270px;
+    }
+
+    .navigations a {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navigations {
+      gap: 20px;
+    }
+
+    .herosection button {
+      animation: herz 0.8s linear;
+    }
+
+    @keyframes herz {
+      0% {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes menz {
+      0% {
+        transform: translateY(100);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero">
+    <img src="fashion.jpg" alt="" />
+  </section>
+
+  <section class="sub">
+    <nav class="navbar">
+      <a href="">Best Seller</a>
+      <a href="">Discount Sales</a>
+      <a href="">Trending</a>
+
+      <div class="icons">
+        <span><i class="fa-solid fa-circle-user"></i></span>
+        <span><i class="fa-solid fa-cart-shopping"></i></span>
+        <span><i class="fa-solid fa-headset"></i></span>
+      </div>
+
+      <div class="menu">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </div>
+    </nav>
+
+    <div class="herosection">
+      <h1 class="trend mt-3"><i>Glorial Trends</i></h1>
+
+      <h2>GET STARTED WITH OUR BEST DEALS</h2>
+
+      <p class="long m-3">
+        <strong>Your Favourite Shopping Experience</strong>
+      </p>
+
+      <button class="shop p-2 rounded-5 px-5 border-0" style="
+            background: #00335e;
+            color: aliceblue;
+            box-shadow: 0 0 6px 1px rgb(6, 6, 6);
+          " type="button">
+        Go Shopping
+      </button>
+    </div>
+
+    <section class="products-container">
+      <div class="row container mx-auto">
+        <div class="col-12">
+          <h2>MEN AND WOMEN FASHION COLLECTION</h2>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 my-3">
+          <div class="card">
+            <img src="images\first.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">UNISEX T-SHIRT</h5>
+              <p class="card-text">N700</p>
+              <a href="#" class="btn btn-primary">Buy More</a>
+              <a href="#" class="btn btn-primary">See More</a>
+            </div> 
+          </div>
+        </div>
+        <div class="col-12 col-md-3 col-lg-4 my-3">
+          <div class="card">
+            <img src="images\second.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">UNISEX T-SHIRT</h5>
+              <p class="card-text">N700</p>
+              <a href="#" class="btn btn-primary">Buy More</a>
+              <a href="#" class="btn btn-primary">See More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 col-lg-4 my-3">
+          <div class="card">
+            <img src="images\clot.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">UNISEX T-SHIRT</h5>
+              <p class="card-text">N700</p>
+              <a href="#" class="btn btn-primary">Buy More</a>
+              <a href="#" class="btn btn-primary">See More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <h2>ELECTONICS</h2>
+        </div>
+        <div class="col-12 col-md-3 col-lg-4 my-3">
+          <div class="electro grid">
+            <div class="card">
+              <img src="images\hia.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">UNISEX T-SHIRT</h5>
+                <p class="card-text">N700</p>
+                <a href="#" class="btn btn-primary">Buy More</a>
+                <a href="#" class="btn btn-primary">See More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 col-lg-4 my-3">
+          <div class="card">
+            <img src="images\baaa.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">UNISEX T-SHIRT</h5>
+              <p class="card-text">N700</p>
+              <a href="#" class="btn btn-primary">Buy More</a>
+              <a href="#" class="btn btn-primary">See More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 col-lg-4 my-3">
+          <div class="card">
+            <img src="images\ask.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">UNISEX T-SHIRT</h5>
+              <p class="card-text">N700</p>
+              <a href="#" class="btn btn-primary">Buy More</a>
+              <a href="#" class="btn btn-primary">See More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="quic bg-dark p-5">
+      <h2><i>GLORIA TRENDS</i></h2>
+      <p class="lin text-success fs-2"><i>Quick link</i></p>
+      <div class="navigations">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Terms</a>
+        <a href="">Privacy</a>
+      </div>
+      <div class="navigations">
+        <p class="lin text-success fs-3"><i>Products</i></p>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Terms</a>
+        <a href="">Privacy</a>
+      </div>
+      <div class="navigations">
+        <p class="lin text-success fs-3"><i>Product</i></p>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Terms</a>
+        <a href="">Privacy</a>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
